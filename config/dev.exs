@@ -3,8 +3,8 @@ use Mix.Config
 # Configure your database
 config :agricol, Agricol.Repo,
   username: "postgres",
-  password: "postgres",
-  database: "agricol_dev",
+  password: "admin",
+  database: "agricol",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
