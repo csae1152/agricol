@@ -10,6 +10,9 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :agricol, AgricolWeb.Endpoint,
+adapter: Ecto.Adapters.Postgres,
+url: {:system, "DATABASE_URL"},
+pool_size: 10
 http: [port: {:system, "PORT"}],
 url: [scheme: "https", host: "agricol.herokuapp.com", port: 443],
 force_ssl: [rewrite_on: [:x_forwarded_proto]],

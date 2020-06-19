@@ -1,0 +1,8 @@
+{
+  "name": "agricol",
+  "description": "eFarming",
+  "image": "joshwlewis/docker-heroku-phoenix:latest",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
