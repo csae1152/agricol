@@ -15,7 +15,7 @@ url: [scheme: "https", host: "agricol.herokuapp.com", port: 443],
 force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json"
 
-  #database
+#database
 config :agricol, Agricol.Repo,
 adapter: Ecto.Adapters.Postgres,
 url: {:system, "DATABASE_URL"},

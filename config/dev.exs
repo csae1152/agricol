@@ -2,8 +2,11 @@ use Mix.Config
 
 # Configure your database
 config :agricol, Agricol.Repo,
-adapter: Ecto.Adapters.Postgres,
-url: {:system, "DATABASE_URL"},
+username: "postgres",
+password: "admin",
+database: "agricol",
+hostname: "localhost",
+show_sensitive_data_on_connection_error: true,
 pool_size: 10
 
 # For development, we disable any cache and enable
