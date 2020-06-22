@@ -34,8 +34,8 @@ defmodule Agricol.MixProject do
   defp deps do
     [
       {:phoenix, "~> 1.5.3"},
-      {:phoenix_ecto, "~> 3.6.0"},
-      {:ecto_sql, "~> 3.0.1"},
+      {:phoenix_ecto, "~> 1.0, override: true"},   
+      {:ecto_sql, "~> 1.0, override: true"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
