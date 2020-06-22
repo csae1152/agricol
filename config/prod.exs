@@ -18,7 +18,7 @@ force_ssl: [rewrite_on: [:x_forwarded_proto]],
 #database
 config :agricol, Agricol.Repo,
 adapter: Ecto.Adapters.Postgres,
-#url: {:system, "DATABASE_URL"},
+url: {:system, "DATABASE_URL"},
 pool_size: 10
 
 # Do not print debug messages in production
