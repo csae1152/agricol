@@ -1,8 +1,8 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}", name: "Agricol" %></h1>
  <nav role="navigation">
+Diagnostic Routines Center
 
-                <%= link "Diagnostic Routines Center", to: Routes.live_dashboard_path(@conn, :home) %>
         </nav>
 </section>
 
