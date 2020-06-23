@@ -1,0 +1,23 @@
+<h1>Show Retinal</h1>
+
+<ul>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @retinal.description %>
+  </li>
+
+  <li>
+    <strong>Retinaimage:</strong>
+    <%= @retinal.retinaimage %>
+  </li>
+
+  <li>
+    <strong>Timestamps:</strong>
+    <%= @retinal.timestamps %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.retinal_path(@conn, :edit, @retinal) %></span>
+<span><%= link "Back", to: Routes.retinal_path(@conn, :index) %></span>

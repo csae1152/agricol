@@ -1,0 +1,5 @@
+<h1>New Retinal</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.retinal_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.retinal_path(@conn, :index) %></span>

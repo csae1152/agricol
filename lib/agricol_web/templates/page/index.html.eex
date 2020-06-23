@@ -1,8 +1,7 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}", name: "Agricol" %></h1>
  <nav role="navigation">
-Diagnostic Routines Center
-
+                <%= link "Diagnostic Routines Center", to: "/retinal" %>
         </nav>
 </section>
 

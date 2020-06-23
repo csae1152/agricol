@@ -17,6 +17,8 @@ defmodule AgricolWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/retina", RetinaController
+    resources "/retinal", RetinalController
   end
 
   # Other scopes may use custom stacks.
