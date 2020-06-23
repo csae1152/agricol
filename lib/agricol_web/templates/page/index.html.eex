@@ -1,38 +1,24 @@
 <section class="phx-hero">
-  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
-  <p>Peace-of-mind from prototype to production</p>
+  <h1><%= gettext "Welcome to %{name}", name: "Agricol" %></h1>
+ <nav role="navigation">
+
+                <%= link "Diagnostic Routines Center", to: Routes.live_dashboard_path(@conn, :home) %>
+        </nav>
 </section>
 
 <section class="row">
   <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.5/CHANGELOG.md">v1.5 Changelog</a>
-      </li>
-    </ul>
-  </article>
+    <h3>Diagnostics</h3>
+
+      <p>Take an image of your animals eye background and our diagnose engine will tell you if there could be a possibility for a diseas in the upcoming future.</p>
+
+</article>
   <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-      <li>
-        <a href="https://elixir-slackin.herokuapp.com/">Elixir on Slack</a>
-      </li>
-    </ul>
+    <h3>Collect your Data</h3>
+<p>With our new ISO-BUS we can connect your farm devices and collect the data they are producing.</p>
+  </article>
+  <article>
+   <h3>Predict</h3>
+<p>With our predictive analysis engine we will help you to bring out the best of your farm.</p>
   </article>
 </section>
