@@ -19,6 +19,7 @@ defmodule AgricolWeb.Router do
     get "/", PageController, :index
     resources "/retina", RetinaController
     resources "/retinal", RetinalController
+    resources "/images", ImageController
   end
 
   # Other scopes may use custom stacks.

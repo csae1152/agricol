@@ -7,7 +7,6 @@ defmodule Agricol.Diagnostics.Retinal do
     field :description, :string
     field :retinaimage, Agricol.Retinalimages.Type
     field :timestamps, :string
-
     timestamps()
   end
 

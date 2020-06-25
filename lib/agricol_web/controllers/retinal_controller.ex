@@ -1,6 +1,5 @@
 defmodule AgricolWeb.RetinalController do
   use AgricolWeb, :controller
-
   alias Agricol.Diagnostics
   alias Agricol.Diagnostics.Retinal
 
@@ -15,7 +14,7 @@ defmodule AgricolWeb.RetinalController do
   end
 
   def create(conn, %{"retinal" => retinal_params}) do
-    case Diagnostics.create_retinal(retinal_params) do
+   case Diagnostics.create_retinal(retinal_params) do
       {:ok, retinal} ->
         conn
         |> put_flash(:info, "Retinal created successfully.")

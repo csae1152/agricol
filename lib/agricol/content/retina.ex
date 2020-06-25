@@ -9,7 +9,6 @@ defmodule Agricol.Content.Retina do
 
     timestamps()
   end
-
   @doc false
   def changeset(retina, attrs) do
     retina

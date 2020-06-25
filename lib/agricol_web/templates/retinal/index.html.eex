@@ -11,20 +11,8 @@
     </tr>
   </thead>
   <tbody>
-<%= for retinal <- @retinals do %>
-    <tr>
-      <td><%= retinal.description %></td>
-      <td><%= retinal.retinaimage %></td>
-      <td><%= retinal.timestamps %></td>
 
-      <td>
-        <span><%= link "Show", to: Routes.retinal_path(@conn, :show, retinal) %></span>
-        <span><%= link "Edit", to: Routes.retinal_path(@conn, :edit, retinal) %></span>
-        <span><%= link "Delete", to: Routes.retinal_path(@conn, :delete, retinal), method: :delete, data: [confirm: "Are you sure?"] %></span>
-      </td>
-    </tr>
-<% end %>
   </tbody>
 </table>
 
-<span><%= link "New Retinal", to: Routes.retinal_path(@conn, :new) %></span>
+<span><%= link "Start New Prediction", to: Routes.retinal_path(@conn, :new) %></span>
