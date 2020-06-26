@@ -1,6 +1,8 @@
-<h1>Show Retinal</h1>
+<h1>Results</h1>
 
+<h3>Detected Diseas</h3>
+<ul>
+<li>Bovine Viral Diarrhea</li>
+</ul>
 
-
-<span><%= link "Edit", to: Routes.retinal_path(@conn, :edit, @retinal) %></span>
 <span><%= link "Back", to: Routes.retinal_path(@conn, :index) %></span>

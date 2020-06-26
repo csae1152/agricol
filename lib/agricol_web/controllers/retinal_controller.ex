@@ -17,7 +17,7 @@ defmodule AgricolWeb.RetinalController do
    case Diagnostics.create_retinal(retinal_params) do
       {:ok, retinal} ->
         conn
-        |> put_flash(:info, "Retinal created successfully.")
+        |> put_flash(:info, "Retinal image analysis finsihed.")
         |> redirect(to: Routes.retinal_path(conn, :show, retinal))
 
       {:error, %Ecto.Changeset{} = changeset} ->

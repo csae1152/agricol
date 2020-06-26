@@ -1,4 +1,4 @@
-<h1>New Retinal</h1>
+<h1>Upload a retinal image</h1>
 
 <%= render "form.html", Map.put(assigns, :action, Routes.retinal_path(@conn, :create)) %>
 
