@@ -4,13 +4,27 @@
   <thead>
     <tr>
       <th>Description</th>
-      <th>Retinaimage</th>
-      <th>Timestamps</th>
+      <th>Info</th>
+      <th>Online</th>
 
       <th></th>
     </tr>
   </thead>
   <tbody>
+   <tr>
+      <td>Bovine Viral Diarrhea</td>
+
+      <td>
+       The signs of BVD vary, depending on the immune status of the exposed animals, and the strain of the infecting virus.
+      </td>
+
+      <td>
+      <%= link "Go to online info", to: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5674437/"%>
+      </td>
+    </tr>
+
+
+
 
   </tbody>
 </table>
